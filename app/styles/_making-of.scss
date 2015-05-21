@@ -1,0 +1,13 @@
+#making-of {
+	.container {
+		background:url('../images/making-of/making-of-bg.jpg');
+		background-size:cover;
+		overflow: hidden;
+
+		.header {
+			position: absolute;
+			z-index: 5;
+		}
+	}
+	
+}

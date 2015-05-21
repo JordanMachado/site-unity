@@ -1,0 +1,15 @@
+#demo {
+	.container {
+		background:url('../images/demo/demo-bg.jpg');
+		background-size:cover;
+
+		iframe {
+			position:absolute;
+			top:50%;
+			left:50%;
+			transform: translate(-50%,-50%);
+
+		}
+	}
+	
+}

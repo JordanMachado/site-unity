@@ -1,0 +1,44 @@
+#thanks {
+	.container {
+		background:url('../images/thanks/thanks-bg.jpg') no-repeat center center;
+		background-size:cover;
+		.thanks {
+			position:absolute;
+			bottom: 20px;
+			width: 50%;
+			left:50%;
+			text-align: center;
+			transform: translateX(-50%);
+			color:#9c6640;
+
+			h2 {
+				font-size: 34px;
+				text-transform: uppercase;
+				margin:0;
+			}
+			p {
+				font-size: 16px;
+				margin:15px;
+			}
+		}
+		.credits {
+			position:absolute;
+			bottom:0;
+			width: 98%;
+			left: 1%;
+			p {
+				position:relative;
+				display: inline;
+				float: left;
+				color:#6f452d;
+			}
+			img {
+				position:relative;
+				display: inline;
+				margin:5px;
+				float: right;
+			}
+		}
+	}
+	
+}

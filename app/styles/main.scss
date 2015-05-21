@@ -1,0 +1,30 @@
+// bower:scss
+// endbower
+
+@import 'const';
+@import 'menu';
+@import 'section';
+@import 'slider';
+body {
+  position:absolute;
+  width:100%;
+  height: 100%;
+  background: #fafafa;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333;
+  margin:0;
+  padding: 0;
+  background:#021121;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+}
+h1,h3 {
+  margin:0;
+  padding:0;
+}
+a {
+  text-decoration: none;
+}
