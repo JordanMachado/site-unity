@@ -19,6 +19,7 @@
 		transition:0.3s;
 		transition-property: background-color;
 		transition-timing-function: ease-out;
+
 	}
 
 	&:hover {
@@ -76,7 +77,8 @@ nav {
 				color:$grey10;
 				transition:0.3s;
 				transition-property: color;
-				
+				font-size:24px;
+				font-family:Montserrat-Light;
 
 				&:hover {
 					color:$yellow;

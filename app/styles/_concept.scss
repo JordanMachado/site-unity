@@ -33,6 +33,15 @@
 			top:50%;
 			transform: translateY(-50%);
 			color:$grey10;
+			h3 {
+				font-size:35px;
+				font-family:Montserrat-Bold;
+				text-transform:uppercase;
+			}
+			p {
+				font-size:18px;
+				font-family:Montserrat-Light;
+			}
 		}
 		
 	}
