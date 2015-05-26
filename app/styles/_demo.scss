@@ -2,14 +2,58 @@
 	.container {
 		background:url('../images/demo/demo-bg.jpg');
 		background-size:cover;
-
+		overflow: hidden;
 		iframe {
 			position:absolute;
 			top:50%;
 			left:50%;
 			transform: translate(-50%,-50%);
+			z-index: 2;
 
 		}
+			
+			.cloud{
+
+				transition:0.4s;
+				transition-property: top,left,right;
+				transition-timing-function: $ease-out-quad;
+
+				&:nth-child(1) {
+					position:absolute;
+					top:0px;
+					right:-38%;
+					z-index: 3;
+				}
+				&:nth-child(2) {
+					position:absolute;
+					top:400px;
+					right:130px;
+				}
+				&:nth-child(3) {
+					position: absolute;
+					left: 30%;
+					top: 25%;
+				}
+			}
+	}
+	&.animated {
+
+		.cloud{
+				&:nth-child(1) {
+
+					top:0px;
+					right:-25%;
+				}
+				&:nth-child(2) {
+					top:400px;
+					right:130px;
+				}
+				&:nth-child(3) {
+					left: 30%;
+					top: 15%;
+				}
+			}
+
 	}
 	
 }

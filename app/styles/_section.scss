@@ -25,13 +25,44 @@ section {
 			text-transform: uppercase;
 			user-select:none;
 			h1 {
+				position:relative;
 				font-size: 60px;
 				font-family:Montserrat-Bold;
+
+				opacity: 0;
+				left:-40px;
+
+				transition:0.4s;
+				transition-property: opacity,left;
+				transition-timing-function: $ease-out-quad;
 			}
 			h3 {
+				position:relative;
 				font-size: 20px;	
 				font-family:Montserrat-Light;
+
+				opacity: 0;
+				left:-40px;
+				transition:0.3s;
+				transition-property: opacity,left;
+				transition-timing-function: $ease-out-quad;
+				transition-delay: 0.1s;
 			}
 		}
+	}
+
+	&.animated{
+		.header {
+
+			h1 {
+				left:0px;
+				opacity: 1;
+			}
+			h3 {
+				left:0px;
+				opacity: 1;
+			}
+		}
+		
 	}
 }

@@ -18,3 +18,16 @@ $('.menu li a,.hamburger').click(function() {
 	$('.menu').toggleClass('show');
 
 })
+
+$(window).scroll(function(){
+	var wh = $(window).height();
+	var scrollValue = $(window).scrollTop();
+	var scrollRatio = scrollValue/wh;
+	$('section').each(function(index){
+		if($(this).hasClass('animated')) return;
+
+		if(scrollRatio>= $( this ).attr( "data-scroll" ))
+			$(this).addClass('animated')
+
+	})
+})
