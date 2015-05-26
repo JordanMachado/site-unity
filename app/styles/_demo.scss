@@ -15,45 +15,134 @@
 			.cloud{
 
 				transition:0.4s;
-				transition-property: top,left,right;
+				transition-property: top,left,right,opacity;
 				transition-timing-function: $ease-out-quad;
 
 				&:nth-child(1) {
 					position:absolute;
 					top:0px;
-					right:-38%;
+					right:-48%;
+					opacity:0;
 					z-index: 3;
 				}
 				&:nth-child(2) {
 					position:absolute;
-					top:400px;
-					right:130px;
+					top: 53%;
+  					right: -9%;
+  					opacity:0;
 				}
 				&:nth-child(3) {
 					position: absolute;
 					left: 30%;
 					top: 25%;
+					opacity:0;
+				}
+				&:nth-child(4) {
+					position: absolute;
+  					top: 107%;
+  					left: 36%;
+  					opacity:0;
+				}
+
+				&:nth-child(5) {
+					position: absolute;
+					top: 64%;
+					left: -20%;
+					z-index: 2;
+					opacity:0;
+				}
+				&:nth-child(6) {
+					position: absolute;
+					top: 26%;
+					left: -29%;
+					z-index: 2;
+					opacity:0;
+				}
+				&:nth-child(7) {
+					position: absolute;
+					top: 27%;
+					left: -16%;
+					z-index: 2;
+					opacity:0;
+				}
+				&:nth-child(8) {
+					position: absolute;
+					top: -3%;
+					left: 33%;
+					opacity:0;
+				}
+				&:nth-child(9) {
+					position: absolute;
+					top: 3%;
+					right: -20%;
+				}
+				&:nth-child(10) {
+					position: absolute;
+					top: 75%;
+					right: -12%;
 				}
 			}
 	}
 	&.animated {
 
-		.cloud{
-				&:nth-child(1) {
-
-					top:0px;
-					right:-25%;
-				}
-				&:nth-child(2) {
-					top:400px;
-					right:130px;
-				}
-				&:nth-child(3) {
-					left: 30%;
-					top: 15%;
-				}
+		.cloud{	
+			&:nth-child(1) {
+				top:0px;
+				right:-38%;
+				z-index: 3;
+				opacity:1;
+			}
+			&:nth-child(2) {
+				top: 53%;
+  				right: 9%;
+  				opacity:1;
+			}
+			&:nth-child(3) {
+				left: 30%;
+				top: 25%;
+				opacity:1;
+			}
+			&:nth-child(4) {
+				top: 77%;
+				left: 36%;
+				opacity:1;
 			}
 
+			&:nth-child(5) {
+				top: 64%;
+				left: -2%;
+				z-index: 2;
+				opacity:1;
+			}
+			&:nth-child(6) {
+				top: 26%;
+				left: -9%;
+				z-index: 2;
+				opacity:1;
+			}
+			&:nth-child(7) {
+				top: 27%;
+				left: -6%;
+				z-index: 2;
+				opacity:1;
+			}
+			&:nth-child(8) {
+				top: 13%;
+				left: 33%;
+				opacity:1;
+			}
+			&:nth-child(9) {
+				top: 3%;
+				right: 20%;
+				opacity:1;
+			}
+			&:nth-child(10) {
+				top: 75%;
+				right: 2%;
+				opacity:1;
+			}
+				
+		}
 	}
 	
 }
